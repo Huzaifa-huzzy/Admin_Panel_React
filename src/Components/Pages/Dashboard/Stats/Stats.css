@@ -1,0 +1,91 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;  /* Increase the overall width */
+  margin: 0 auto;  /* Center the grid container */
+}
+
+@media (min-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for medium screens */
+    width: 80%;  /* Increase width on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(6, 1fr); /* Four columns for larger screens */
+    width: 100%;  /* Increase width on large screens */
+  }
+}
+
+.stat-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+}
+
+.stat-icon.positive {
+  color: #1de9b6;
+}
+
+.stat-icon.negative {
+  color: #ff1744;
+}
+
+.stat-diff {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #757575;
+}
+
+.stat-diff .positive {
+  color: #1de9b6;
+  font-weight: 700;
+}
+
+.stat-diff .negative {
+  color: #ff1744;
+  font-weight: 700;
+}
+
+.stat-diff.increase {
+  color: #1de9b6;
+}
+
+.stat-diff.decrease {
+  color: #ff1744;
+}

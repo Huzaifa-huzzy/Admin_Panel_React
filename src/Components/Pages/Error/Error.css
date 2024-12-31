@@ -1,0 +1,80 @@
+/* Overall error page layout */
+.error-page {
+    display: flex; /* This will allow us to place sidebar and content side by side */
+    min-height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  /* Sidebar container styling */
+  .sidebar-container {
+    flex: 0 0 250px; /* Sidebar takes up fixed width (250px) */
+    background-color: #333; /* Example background color */
+    color: #fff; /* Text color inside sidebar */
+    padding: 20px;
+    position: fixed; /* Fixes the sidebar in place */
+    height: 100vh; /* Make sure the sidebar spans the full height */
+    top: 0;
+    left: 0;
+  }
+  
+  /* Main error content container */
+  .error-container {
+    flex: 1;
+    padding-left: 250px; /* Leave space for sidebar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Error page content */
+  .error-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-image img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .error-text h1 {
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+  }
+  
+  .error-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .error-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .error-buttons .btn-home,
+  .error-buttons .btn-contact {
+    background-color: #ff6347;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-buttons .btn-home:hover,
+  .error-buttons .btn-contact:hover {
+    background-color: #ff4500;
+  }
+  

@@ -1,0 +1,6 @@
+/* DemoPie.css */
+.pie-label {
+    fill: white !important; /* Ensure the text color is white */
+    font-weight: bold;      /* Optional: keep the bold text */
+  }
+  
